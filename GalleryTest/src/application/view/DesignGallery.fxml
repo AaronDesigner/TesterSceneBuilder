@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Controlls">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../Desktop/tumblr_static_tumblr_static_40k_logo.png" />
+               </image>
+            </ImageView>
+         </top>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleViewImage1" text="Image1" />
+                  <Button mnemonicParsing="false" onAction="#handleViewImage2" text="Image2" />
+                  <Button mnemonicParsing="false" onAction="#handleViewImage3" text="Image3" />
+               </children>
+               <padding>
+                  <Insets left="18.0" top="125.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleViewImage4" text="Image4" />
+                  <Button mnemonicParsing="false" onAction="#handleViewImage5" text="Image5" />
+                  <Button mnemonicParsing="false" onAction="#handleViewImage6" text="Image6" />
+               </children>
+               <padding>
+                  <Insets left="18.0" top="125.0" />
+               </padding>
+            </VBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleClose" text="Die">
+                     <HBox.margin>
+                        <Insets left="275.0" top="35.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <ImageView fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../Desktop/warhammer_40k___space_marine_by_kif_labs-d49nvr6.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
