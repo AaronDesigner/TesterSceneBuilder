@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.Controlls">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../../Desktop/warhammer_40k___space_marine_by_kif_labs-d49nvr6.png" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="379.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@../../../../../Desktop/tumblr_static_tumblr_static_40k_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleSend" text="Log in" />
+                  <Button mnemonicParsing="false" text="Modify" />
+                  <Button mnemonicParsing="false" onAction="#handleClose" text="Exit" />
+               </children>
+               <padding>
+                  <Insets left="100.0" top="35.0" />
+               </padding>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
