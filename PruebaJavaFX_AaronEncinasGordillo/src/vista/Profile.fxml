@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="56.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="78.0" prefWidth="600.0" styleClass="background" stylesheets="@mystylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="65.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/github_white.png" />
+                           </image>
+                        </ImageView>
+                        <Button defaultButton="true" mnemonicParsing="false" prefHeight="45.0" prefWidth="434.0" text="View in Github">
+                           <font>
+                              <Font name="Arial Bold" size="44.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="17.0" prefWidth="600.0" styleClass="background" stylesheets="@mystylesheet.css" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="My profile" textFill="#008180" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="jay R." textFill="#008180" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Do you know me?!" />
+                     </tooltip>
+                  </Label>
+                  <Label text="Programmers can design" textFill="#b9adad" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ImageView fitHeight="86.0" fitWidth="68.0" onMousePressed="#sendStage" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@images/send.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

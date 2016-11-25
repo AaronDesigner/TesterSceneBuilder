@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@images/profilephoto.png" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <AnchorPane prefHeight="75.0" prefWidth="600.0" styleClass="background" stylesheets="@mystylesheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@images/github_white.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="22.0" prefWidth="600.0" styleClass="background" stylesheets="@mystylesheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#closeStage" text="Exit" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children></AnchorPane>
+         </bottom>
+         <left>
+            <GridPane prefHeight="161.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <Label text="Nombre" />
+                  <Label text="Primer Apellido" GridPane.rowIndex="1" />
+                  <Label text="Segundo Apellido" GridPane.rowIndex="2" />
+                  <Label text="Descripción personal" GridPane.rowIndex="3" />
+                  <Label text="Describe tu entorno " GridPane.rowIndex="5" />
+                  <Label text="Estudios Realizados" GridPane.rowIndex="4" />
+                  <Label text="Gracias por todo" GridPane.rowIndex="6" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin></TextArea>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" top="1.0" />
+                     </GridPane.margin>
+                  </TextArea>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
