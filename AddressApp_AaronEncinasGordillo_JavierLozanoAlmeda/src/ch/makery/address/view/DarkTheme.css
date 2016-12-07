@@ -1,0 +1,161 @@
+.background {
+    -fx-background-color: #F5F5F5;
+}
+.backgroundedit {
+	-fx-background-color: derive(#512DA8,50%);
+}
+.backgroundstadistic {
+	-fx-background-color: derive(#512DA8,50%);
+}
+.chart-bar {
+	-fx-bar-fill: #CDDC39;
+}
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: derive(#512DA8,50%);
+    -fx-opacity: 1;
+}
+.labeltable {
+	-fx-text-fill: derive(#512DA8,90%);
+	
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: derive(#512DA8,75%);
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill:#CDDC39;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #FFFFFF;
+    -fx-control-inner-background: #D1C4E9;
+    -fx-background-color: #D1C4E9;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: #D1C4E9;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: derive(#512DA8,50%);
+    
+}
+.table-view:focused .table-row-cell:filled:hover {
+    -fx-background-color:  derive(#512DA8,75%);
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #D1C4E9 transparent #D1C4E9;
+    -fx-background-color: transparent, derive(#D1C4E9,0%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#512DA8,50%);
+}
+
+
+.context-menu {
+    -fx-background-color: derive(#512DA8,50%);
+}
+
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-opacity: 1;
+}
+
+.menu .left-container {
+	-fx-background-color: derive(#512DA8,50%);
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: derive(#512DA8,50%);
+}
+
+
+.AddButton {
+	-fx-image:url("../../../../../resources/images/Add.png");
+}
+
+
+.AddButton:hover {
+	-fx-image:url("../../../../../resources/images/AddHover.png");
+	-fx-cursor: hand ;
+}
+
+.DeleteButton {
+	-fx-image:url("../../../../../resources/images/Delete.png");
+}
+
+.DeleteButton:hover {
+	-fx-image:url("../../../../../resources/images/DeleteHover.png");
+	-fx-cursor: hand ;
+}
+
+.EditButton {
+	-fx-image:url("../../../../../resources/images/Edit.png");
+}
+
+
+.EditButton:hover {
+	-fx-image:url("../../../../../resources/images/EditHover.png");
+	-fx-cursor: hand ;
+}
+.CancelButton {
+	-fx-image:url("../../../../../resources/images/Cancel.png");
+}
+
+.CancelButton:hover {
+	-fx-image:url("../../../../../resources/images/CancelHover.png");
+	-fx-cursor: hand ;
+}
+
+.AcceptButton {
+	-fx-image:url("../../../../../resources/images/Accept.png");
+}
+
+
+.AcceptButton:hover {
+	-fx-image:url("../../../../../resources/images/AcceptHover.png");
+	-fx-cursor: hand ;
+}
